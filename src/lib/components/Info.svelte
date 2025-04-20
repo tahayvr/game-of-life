@@ -11,7 +11,7 @@
 	<Dialog.Root>
 		<Dialog.Trigger>
 			<Button variant="outline" size="icon" class="bg-background/50 shadow-lg backdrop-blur-sm">
-				<InfoIcon />
+				<InfoIcon class="h-4 w-4" />
 			</Button>
 		</Dialog.Trigger>
 		<Dialog.Content>
@@ -21,13 +21,26 @@
 					<div class="mt-4 flex flex-col gap-2">
 						<p>
 							Conway's Game of Life is a cellular automaton devised by the British mathematician
-							John Conway. It is a zero-player game, meaning that its evolution is determined by its
-							initial state, requiring no further input.
+							John Conway. It follows simple rules:
 						</p>
+						<ol class="list-decimal pl-4">
+							<li>
+								Any live cell with fewer than two live neighbours dies, as if by underpopulation.
+							</li>
+							<li>
+								Any live cell with two or three live neighbours lives on to the next generation.
+							</li>
+							<li>
+								Any live cell with more than three live neighbours dies, as if by overpopulation.
+							</li>
+							<li>
+								Any dead cell with exactly three live neighbours becomes a live cell, as if by
+								reproduction.
+							</li>
+						</ol>
 						<p>
 							One interacts with the Game of Life by creating an initial configuration and observing
-							how it evolves. It is Turing complete and can simulate a universal constructor or any
-							other Turing machine.
+							how it evolves.
 						</p>
 						<Separator class="my-4" />
 						<p class="self-center text-sm text-muted-foreground">
