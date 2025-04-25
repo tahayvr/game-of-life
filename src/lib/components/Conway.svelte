@@ -292,6 +292,8 @@
 		onmouseup={handleMouseUp}
 		onmouseleave={handleMouseUp}
 		tabindex="-1"
+		aria-label="Game of Life Grid"
+		role="grid"
 	>
 		<div class="absolute inset-0 flex">
 			<div
@@ -310,6 +312,8 @@
 								onmousedown={() => handleMouseDown(rowIndex, colIndex)}
 								onmouseenter={() => handleMouseEnter(rowIndex, colIndex)}
 								disabled={running}
+								aria-label={`Cell at row ${rowIndex}, column ${colIndex}`}
+								role="gridcell"
 							></button>
 						{/each}
 					</div>
