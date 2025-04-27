@@ -18,6 +18,8 @@
 		title: 'Game of Life | by noiseRandom',
 		description:
 			"Conway's Game of Life is a cellular automaton devised by the British mathematician John Conway.",
+		url: 'https://gameoflife.taha.gg',
+		type: 'website',
 		images: [
 			{
 				url: 'https://gameoflife.taha.gg/images/gameoflife-noiserandom.webp',
