@@ -44,7 +44,7 @@
 						</p>
 						<Separator class="my-4" />
 						<p class="self-center text-sm text-muted-foreground">
-							© {year} | Taha AKA noiseRandom
+							© {year} | <a href="https://taha.gg">noiseRandom</a>
 						</p>
 					</div>
 				</Dialog.Description>
