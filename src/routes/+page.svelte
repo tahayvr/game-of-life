@@ -18,7 +18,13 @@
 		title: 'Game of Life | by noiseRandom',
 		description:
 			"Conway's Game of Life is a cellular automaton devised by the British mathematician John Conway.",
-		images: [{ url: 'https://example.com/image.jpg', width: 800, height: 600 }],
+		images: [
+			{
+				url: 'https://gameoflife.taha.gg/images/gameoflife-noiserandom.webp',
+				width: 800,
+				height: 600
+			}
+		],
 		site_name: 'Game of Life | by noiseRandom'
 	}}
 	twitter={{
@@ -27,6 +33,6 @@
 		title: 'Game of Life | by noiseRandom',
 		description:
 			"Conway's Game of Life is a cellular automaton devised by the British mathematician John Conway.",
-		image: 'https://example.com/image.jpg'
+		image: 'https://gameoflife.taha.gg/images/gameoflife-noiserandom.webp'
 	}}
 />
