@@ -11,7 +11,7 @@
 	$: generationsPerSecond = speed > 0 ? Math.round(1000 / speed) : 0;
 </script>
 
-<div class="fixed left-0 right-0 top-4 z-10 flex justify-center">
+<div class="fixed left-0 right-0 top-4 z-10 hidden justify-center md:flex">
 	<Card.Root class="border-0 bg-background/50 shadow-lg backdrop-blur-sm">
 		<Card.Content class="py-3">
 			<div class="flex flex-wrap items-center justify-center gap-4">

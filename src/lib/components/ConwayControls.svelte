@@ -18,36 +18,48 @@
 <div class="fixed bottom-4 left-0 right-0 z-10 flex justify-center">
 	<Card.Root class="border-0 bg-background/50 shadow-lg backdrop-blur-sm">
 		<Card.Content class="py-3">
-			<div class="flex flex-nowrap items-center justify-center gap-2 overflow-x-auto px-2">
-				<Button variant={running ? 'destructive' : 'default'} onclick={toggleRunning}>
-					{running ? 'Stop' : 'Start'}
-				</Button>
+			<div
+				class="flex flex-col items-center justify-center gap-2 overflow-x-auto px-2 md:flex-row md:gap-6"
+			>
+				<div class="flex gap-2">
+					<Button variant={running ? 'destructive' : 'default'} onclick={toggleRunning}>
+						{running ? 'Stop' : 'Start'}
+					</Button>
 
-				<Button variant="outline" onclick={updateGrid} disabled={running}>Step</Button>
-				<Button variant="outline" onclick={clearGrid}>Clear</Button>
-				<Separator orientation="vertical" class="mx-2" />
-				<Button variant="outline" onclick={randomizeGrid}>Random</Button>
-				<Button variant="outline" onclick={() => addGlider(5, 5)}>Add Glider</Button>
-				<Button variant="outline" onclick={() => addPulsar(5, 20)}>Add Pulsar</Button>
-				<Separator orientation="vertical" class="mx-2" />
-				<span class="whitespace-nowrap text-sm">Speed:</span>
-				<Button
-					variant={speed >= 300 ? 'default' : 'outline'}
-					size="sm"
-					onclick={() => setSpeed(500)}
-				>
-					Slow
-				</Button>
-				<Button
-					variant={speed >= 80 && speed < 300 ? 'default' : 'outline'}
-					size="sm"
-					onclick={() => setSpeed(100)}
-				>
-					Normal
-				</Button>
-				<Button variant={speed < 80 ? 'default' : 'outline'} size="sm" onclick={() => setSpeed(50)}>
-					Fast
-				</Button>
+					<Button variant="outline" onclick={updateGrid} disabled={running}>Step</Button>
+					<Button variant="outline" onclick={clearGrid}>Clear</Button>
+				</div>
+				<Separator class="blcok mx-2 md:hidden" />
+				<div class="flex gap-2">
+					<Button variant="outline" onclick={randomizeGrid}>Random</Button>
+					<Button variant="outline" onclick={() => addGlider(5, 5)}>Add Glider</Button>
+					<Button variant="outline" onclick={() => addPulsar(5, 20)}>Add Pulsar</Button>
+				</div>
+				<Separator class="mx-2 block md:hidden" />
+				<div class="flex items-center gap-2">
+					<span class="whitespace-nowrap text-sm">Speed:</span>
+					<Button
+						variant={speed >= 300 ? 'default' : 'outline'}
+						size="sm"
+						onclick={() => setSpeed(500)}
+					>
+						Slow
+					</Button>
+					<Button
+						variant={speed >= 80 && speed < 300 ? 'default' : 'outline'}
+						size="sm"
+						onclick={() => setSpeed(100)}
+					>
+						Normal
+					</Button>
+					<Button
+						variant={speed < 80 ? 'default' : 'outline'}
+						size="sm"
+						onclick={() => setSpeed(50)}
+					>
+						Fast
+					</Button>
+				</div>
 			</div>
 		</Card.Content>
 	</Card.Root>

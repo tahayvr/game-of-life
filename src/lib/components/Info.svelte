@@ -18,37 +18,33 @@
 			<Dialog.Header>
 				<Dialog.Title>Conway's Game of Life</Dialog.Title>
 				<Dialog.Description>
-					<div class="mt-4 flex flex-col gap-2">
-						<p>
-							Conway's Game of Life is a cellular automaton devised by the British mathematician
-							John Conway. It follows simple rules:
-						</p>
-						<ol class="list-decimal pl-4">
-							<li>
-								Any live cell with fewer than two live neighbours dies, as if by underpopulation.
-							</li>
-							<li>
-								Any live cell with two or three live neighbours lives on to the next generation.
-							</li>
-							<li>
-								Any live cell with more than three live neighbours dies, as if by overpopulation.
-							</li>
-							<li>
-								Any dead cell with exactly three live neighbours becomes a live cell, as if by
-								reproduction.
-							</li>
-						</ol>
-						<p>
-							One interacts with the Game of Life by creating an initial configuration and observing
-							how it evolves.
-						</p>
-						<Separator class="my-4" />
-						<p class="self-center text-sm text-muted-foreground">
-							© {year} | <a href="https://taha.gg">noiseRandom</a>
-						</p>
-					</div>
+					by <a href="https://taha.gg">noiseRandom</a>
 				</Dialog.Description>
 			</Dialog.Header>
+			<div class=" flex flex-col gap-2">
+				<p>
+					Conway's Game of Life is a cellular automaton devised by the British mathematician John
+					Conway.
+				</p>
+				<p>It follows simple rules:</p>
+				<ol class="list-decimal pl-4">
+					<li>Any live cell with fewer than two live neighbours dies, as if by underpopulation.</li>
+					<li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+					<li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+					<li>
+						Any dead cell with exactly three live neighbours becomes a live cell, as if by
+						reproduction.
+					</li>
+				</ol>
+				<p>
+					One interacts with the Game of Life by creating an initial configuration and observing how
+					it evolves.
+				</p>
+				<Separator class="my-4" />
+				<p class="self-center text-sm text-muted-foreground">
+					© {year} | <a href="https://taha.gg">noiseRandom</a>
+				</p>
+			</div>
 		</Dialog.Content>
 	</Dialog.Root>
 </div>
