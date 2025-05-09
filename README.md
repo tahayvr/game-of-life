@@ -2,44 +2,14 @@
 
 An interactive implementation of Conway's Game of Life using Svelte and Tailwind CSS.
 
+![Game of Life](static/images/nr-game-of-life-screenshot.png)
+
 ## Features
 
-- Responsive grid that adapts to window size
-- Interactive cell editing (click and drag to draw patterns)
+- Responsive grid
 - Adjustable simulation speed
 - Pre-built patterns (Glider, Pulsar)
 - Status display showing grid dimensions and generation count
-- Modern glass-effect UI
-
-## Controls
-
-- **Start/Stop**: Toggle the simulation
-- **Step**: Advance one generation when paused
-- **Clear**: Reset the grid to empty
-- **Random**: Fill the grid with a random pattern
-- **Add Glider/Pulsar**: Add pre-built patterns
-- **Speed**: Adjust simulation speed (Slow/Normal/Fast)
-
-## Development
-
-Once you've cloned the project and installed dependencies with `npm install`, start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
 
 ## About Conway's Game of Life
 
@@ -51,8 +21,23 @@ Conway's Game of Life is a cellular automaton devised by mathematician John Conw
 
 These simple rules create complex emergent patterns and behaviors.
 
-## Implementation Details
+## Development
 
-- Built with Svelte
-- Uses Tailwind CSS for styling
-- Implements wrap-around grid edges
+Once you've cloned the project and installed dependencies with `npm install`, start a development server:
+
+```bash
+npm run dev
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
