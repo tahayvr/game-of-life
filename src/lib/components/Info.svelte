@@ -1,7 +1,8 @@
 <script>
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
-	import { Button } from '$lib/components/ui/button/index.js';
+	import { Button, buttonVariants } from '$lib/components/ui/button/index.js';
 	import InfoIcon from '@lucide/svelte/icons/info';
+	import GithubIcon from '@lucide/svelte/icons/github';
 	import { Separator } from '$lib/components/ui/separator/index.js';
 
 	const year = new Date().getFullYear();
@@ -9,16 +10,17 @@
 
 <div class="absolute left-4 top-4 z-10">
 	<Dialog.Root>
-		<Dialog.Trigger>
-			<Button variant="outline" size="icon" class="bg-background/50 shadow-lg backdrop-blur-sm">
-				<InfoIcon class="h-4 w-4" />
-			</Button>
+		<Dialog.Trigger
+			class={buttonVariants({ variant: 'outline', size: 'icon' }) +
+				' bg-background/50 shadow-lg backdrop-blur-sm'}
+		>
+			<InfoIcon class="h-4 w-4" />
 		</Dialog.Trigger>
 		<Dialog.Content>
 			<Dialog.Header>
 				<Dialog.Title>Conway's Game of Life</Dialog.Title>
 				<Dialog.Description>
-					by <a href="https://taha.gg">noiseRandom</a>
+					by <a href="https://taha.gg" target="_blank">noiseRandom</a>
 				</Dialog.Description>
 			</Dialog.Header>
 			<div class=" flex flex-col gap-2">
@@ -41,8 +43,22 @@
 					it evolves.
 				</p>
 				<Separator class="my-4" />
+				<div class="flex justify-between">
+					<Button variant="outline" href="https://blog.taha.gg/essays/digital-cells-digital-hell">
+						Theory
+					</Button>
+					<Button
+						variant="outline"
+						size="icon"
+						href="https://github.com/tahayvr/game-of-life"
+						rel="noopener noreferrer"
+					>
+						<GithubIcon class="h-4 w-4" />
+					</Button>
+				</div>
+				<Separator class="my-4" />
 				<p class="self-center text-sm text-muted-foreground">
-					© {year} | <a href="https://taha.gg">noiseRandom</a>
+					© {year} | <a href="https://taha.gg" target="_blank">noiseRandom</a>
 				</p>
 			</div>
 		</Dialog.Content>
